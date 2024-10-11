@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+html {
+    font-family: 'Jost', sans-serif;
+}
+h1 {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 20pt;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 14pt;
+}
+
+a {
+    color: black;
+    width: 100%;
+
+}
+
+
+
+.content {
+    display: flex;
+    height: 90vh; /* пыталась нормально, но пока костыль*/
+}
+
+.content-left {
+    width: 70%;
+    border-color: black;
+    border-style: solid;
+    margin: 2%;
+    padding: 4%;
+    border-top-left-radius: 30px;
+    background-color: thistle;
+}
+
+.content-right {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    width: 30%;
+    border-color: black;
+    border-style: solid;
+    margin: 2%;
+    padding: 4%;
+    border-bottom-right-radius: 30px;
+}
+
+img {
+    object-fit: cover;
+    overflow: hidden;
+}
