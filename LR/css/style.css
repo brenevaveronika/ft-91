@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+html {
+    font-family: 'Jost', sans-serif;
+    height: 100%;
+}
+h1 {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 20pt;
+    text-align: center;
+    padding: 0%;
+}
+
+h2 {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 14pt;
+}
+
+a {
+    color: black;
+    width: 100%;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    align-self:flex-end;
+}
+
+.content {
+    display: flex;
+    height: 90vh; /* пыталась нормально, но пока костыль*/
+}
+
+.content-left {
+    width: 80%;
+    border-color: black;
+    border-style: solid;
+    margin: 2%;
+    padding: 4%;
+    border-top-left-radius: 30px;
+    background-color: thistle;
+}
+
+.content-right {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    width: 20%;
+    border-color: black;
+    border-style: solid;
+    margin: 2%;
+    padding: 4%;
+    border-bottom-right-radius: 30px;
+}
+
+img {
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.container {
+    
+    background-color: antiquewhite;
+    padding: 5%;
+}
+
+
+.block {
+    position: relative;
+    left: calc(50% - 100px);
+    background-color:maroon;
+    width: 200px;
+    height: 200px;
+}
+
+.container > img {
+    position: relative;
+    left: calc(50% - 100px);
+}
+
+.container-2 {
+    padding: 5%;
+    
+    background-color: maroon;
+}
+
+.block-2{
+    background-color: antiquewhite;
+    position: relative;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 200px;
+}
+
+.container-3 {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 5%;
+    padding: 3%;
+    border: 5px solid maroon;
+    justify-content: space-around;
+}
+
+.block-3 {
+    margin: 2%;
+    width: 200px;
+    height: 200px;
+    background-color: antiquewhite;
+}
+
+.container-4 {
+    position: relative;
+    margin: 5%;
+    border: 5px solid antiquewhite;
+    min-height: 700px;
+}
+
+.block-4 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.block-red {
+    border: 5px solid maroon;
+    top: 100px;
+    left: 100px;
+}
+
+.block-blue {
+    border: 5px solid navy;
+    top: 250px;
+    left: 250px;
+}
+
+.block-green {
+    border: 5px solid darkgreen;
+    top: 400px;
+    left: 400px;
+}
