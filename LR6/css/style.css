@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+::-webkit-scrollbar {
+    width: 0;
+}
+h1 {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 20pt;
+    text-align: center;
+    padding: 0%;
+}
+
+h2 {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 14pt;
+}
+
+body {
+    margin: 2%;
+    font-family: 'Jost', sans-serif;
+    height: 100%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Jost';
+    padding: 0;
+}
+
+h5 {
+    font-family: 'Unbounded';
+    font-weight: 700;
+}
+
+
+/* TODO: сделать заголовок и ссылки на одной высоте */
+.navbar {
+    border: 2px solid black;
+    margin-bottom: 5%;
+    padding: 2%;
+}
+
+.navbar-brand {
+    font-family: 'Unbounded';
+    font-size: 20pt;
+    margin-right: 7%;
+    font-weight: 700;
+    padding: 0;
+}
+
+.nav-link {
+    padding: 0;
+}
+
+/* TODO: пофиксить разность высоты в карусели фото */
+
+
+.scrollspy {
+    top: 10%;
+    position: sticky;
+    height: fit-content;
+    border: 2px solid black;
+}
+
+.list-group {
+    border-radius: 0;
+    width: 100%;
+}
+
+.list-group-item {
+    border: none;
+    
+    margin: 0;
+}
+.list-group-item.active {
+    background-color: maroon;
+}
+
+.card {
+    width: 30%;
+    margin-top: 5%;
+    padding: 5%;
+    border: 2px solid black;
+    border-radius: 0;
+    align-content: space-between;
+}
+
+.cards {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
+.btn-primary {
+    background-color: maroon;
+    border: none;
+    border-radius: 0;
+}
+
+.btn-primary:hover {
+    background-color: black;
+}

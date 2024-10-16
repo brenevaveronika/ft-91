@@ -1,6 +1,7 @@
 .table-container {
     display: flex;
     justify-content: center;
+    margin-bottom: 5%;
 }
 
 table {
@@ -10,7 +11,7 @@ table {
 }
 
 caption {
-    padding: 2%;
+    padding: 10px;
     font-weight: bold;
     font-family: 'Unbounded';
     font-size: 20pt;
@@ -32,4 +33,31 @@ td:last-of-type {
 
 tbody > tr:nth-of-type(even) {
     background-color: whitesmoke;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 2%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+input {
+    height: 30px;
+    background-color: whitesmoke;
+    border: none;
+}
+
+button {
+    height: 30px;
+    background-color: antiquewhite;
+    border: 2px solid black;
 }

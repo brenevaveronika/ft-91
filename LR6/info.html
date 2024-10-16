@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Главная</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Smith.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                    <a class="nav-link" href="#">Фильмы</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main screen -->
+    <div class="row">
+        <div class="col-2">
+            <div id="list-example" class="scrollspy list-group">
+                <a class="list-group-item list-group-item-action" href="#carouselExampleIndicators">Галерея</a>
+                <a class="list-group-item list-group-item-action" href="#cards">Фильмы</a>
+                <a class="list-group-item list-group-item-action" href="#facts">Факты</a>
+            </div>
+        </div>
+        <div class="col-10">
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+                class="scrollspy-example" tabindex="0">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/will1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/will2.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/will3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="cards col-10" id="cards">
+                    <div class="card" id="card1">
+                        <img src="img/mibposter.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Люди в черном</h5>
+                            <p class="card-text">Они - самый большой секрет Земли. Они работают на неофициальное
+                                правительственное агентство, регулирующее деятельность инопланетян на Земле.
+
+                                Они - это лучшая, последняя и единственная линия защиты Земли от отбросов вселенной. Их
+                                работа секретна, их оружие совершенно, им нет равных, они не оставляют следов. Они - это
+                                Люди в черном.</p>
+                            <a href="https://www.kinopoisk.ru/film/1091/" class="btn btn-primary">Фильм на
+                                Кинопоиске</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/sevenlivesposter.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Семь жизней</h5>
+                            <p class="card-text">Инженер Бен отправляется в необычное путешествие. В ходе своей поездки
+                                он встречает семерых незнакомцев, включая смертельно больную Эмили, которая называет
+                                себя девушкой с подбитыми крыльями. Бен неожиданно влюбляется в нее, что сильно
+                                усложняет его первоначальный план. Сможет ли он разгадать послание судьбы?</p>
+                            <a href="https://www.kinopoisk.ru/film/395787/" class="btn btn-primary">Фильм на
+                                Кинопоиске</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/thepursuitofhappinesposter.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">В погоне за счастьем</h5>
+                            <p class="card-text">Крис Гарднер – отец-одиночка. Воспитывая пятилетнего сына, Крис изо
+                                всех сил старается сделать так, чтобы ребенок рос счастливым. Работая продавцом, он не
+                                может оплатить квартиру, и их выселяют.
+
+                                Оказавшись на улице, но не желая сдаваться, отец устраивается стажером в брокерскую
+                                компанию, рассчитывая получить должность специалиста. Только на протяжении стажировки он
+                                не будет получать никаких денег, а стажировка длится 6 месяцев...</p>
+                            <a href="https://www.kinopoisk.ru/film/104938/" class="btn btn-primary">Фильм на
+                                Кинопоиске</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <p class="d-inline-flex gap-1" id="facts">
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Знаете ли вы, что...
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        Росс является 4-ым ребенком в семье (из 5 братьев и сестер). Вместе со своими сиблингами, он
+                        основал музыкальную группу R5.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
