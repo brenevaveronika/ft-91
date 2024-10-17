@@ -36,7 +36,7 @@ h5 {
 /* TODO: сделать заголовок и ссылки на одной высоте */
 .navbar {
     border: 2px solid black;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     padding: 2%;
 }
 
@@ -52,7 +52,6 @@ h5 {
     padding: 0;
 }
 
-/* TODO: пофиксить разность высоты в карусели фото */
 
 
 .scrollspy {
@@ -60,6 +59,16 @@ h5 {
     position: sticky;
     height: fit-content;
     border: 2px solid black;
+}
+
+
+.carousel-inner {
+   
+}
+
+.carousel-item > img {
+    object-fit: fill;
+    overflow: hidden;
 }
 
 .list-group {
@@ -77,13 +86,13 @@ h5 {
 }
 
 .card {
-    width: 30%;
+    width: 400px;
     margin-top: 5%;
     padding: 5%;
     border: 2px solid black;
     border-radius: 0;
-    align-content: space-between;
 }
+
 
 .cards {
     width: 100%;
@@ -97,8 +106,19 @@ h5 {
     background-color: maroon;
     border: none;
     border-radius: 0;
+    width: 100%;
 }
 
 .btn-primary:hover {
     background-color: black;
+}
+
+.alert-light {
+    border: 2px solid black;
+    border-radius: 0;
+    background: antiquewhite;
+}
+.card-collapse {
+    width: 100%;
+    margin-top: 2%;
 }
