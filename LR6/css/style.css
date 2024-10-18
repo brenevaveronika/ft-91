@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+
 ::-webkit-scrollbar {
     width: 0;
 }
@@ -7,6 +8,7 @@ h1 {
     font-size: 20pt;
     text-align: center;
     padding: 0%;
+    margin: 2%;
 }
 
 h2 {
@@ -32,8 +34,6 @@ h5 {
     font-weight: 700;
 }
 
-
-/* TODO: сделать заголовок и ссылки на одной высоте */
 .navbar {
     border: 2px solid black;
     margin-bottom: 2%;
@@ -52,15 +52,12 @@ h5 {
     padding: 0;
 }
 
-
-
 .scrollspy {
     top: 10%;
     position: sticky;
     height: fit-content;
     border: 2px solid black;
 }
-
 
 .carousel-item > img {
     object-fit: fill;
@@ -81,21 +78,25 @@ h5 {
     background-color: maroon;
 }
 
+
+/* TODO: make CARDS resusable style for every card in project */
 .card {
-    width: 400px;
     margin-top: 5%;
     padding: 5%;
     border: 2px solid black;
     border-radius: 0;
 }
-
-
 .cards {
     width: 100%;
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 5%;
+    gap: 2%;
+}
+
+.cards > .card {
+    width: 350px;
 }
 
 .btn-primary {
@@ -117,4 +118,10 @@ h5 {
 .card-collapse {
     width: 100%;
     margin-top: 2%;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
 }
