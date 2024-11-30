@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(227, 218, 207);
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(65, 42, 6, 0.864);
+}
+
+h3 {
+    color: rgba(142, 70, 18, 0.808);
+}
+
+a {
+    color: green;
+    text-decoration: underline;
+}
