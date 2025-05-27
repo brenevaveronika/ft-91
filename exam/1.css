@@ -1,0 +1,121 @@
+@media screen and (max-width: 479px) {
+  .search-input {
+    width: 100dvw;
+  }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.filter-block {
+    border: 1px solid #5b84d5;
+    padding: 15px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.checkbox-group {
+    margin-bottom: 30px;
+}
+
+.checkbox-item {
+    margin-bottom: 8px;
+    
+}
+
+.checkbox-item input[type="checkbox"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: none;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.checkbox-item input[type="checkbox"]:checked {
+    background-color: #5b84d5;
+    border-color: #5b84d5;
+}
+
+.checkbox-item input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 4px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.checkbox-item label {
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+button {
+    padding: 8px 15px;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 60%;
+    transition: all 0.3s;
+}
+
+.apply {
+    background-color: #5b84d5;
+    color: white;
+    border: none;
+}
+
+.apply:hover {
+    background-color: #2e4c8a;
+    color: white;
+}
+
+.reset {
+    background-color: white;
+    border-width: 1px;
+}
+
+.reset:hover {
+    background-color: rgb(231, 235, 216);
+}

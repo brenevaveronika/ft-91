@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Задание 3 </title>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <style>
+    .numbers-manager {
+      max-width: 300px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 8px;
+      font-family: Arial, sans-serif;
+    }
+    .numbers-list {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+    .number-item {
+      padding: 10px 15px;
+      margin: 5px 0;
+      background-color: #f5f5f5;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-align: center;
+    }
+    .number-item:hover {
+      background-color: #e0e0e0;
+    }
+    .add-button {
+      width: 100%;
+      padding: 10px;
+      background-color: #42b983;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .add-button:hover {
+      background-color: #3aa876;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div class="numbers-manager">
+      <ul class="numbers-list">
+        <li
+          v-for="(number, index) in numbers"
+          :key="index"
+          class="number-item"
+          @click="divideNumber(index)"
+        >
+        <!-- тут просто форматирует число до значения с одним знаком после запятой -->
+          {{ number % 1 === 0 ? number : number.toFixed(1) }}
+        </li>
+      </ul>
+      <button class="add-button" @click="addNumber">
+        Добавить число (1/2 последнего)
+      </button>
+    </div>
+  </div>
+
+  <script>
+    const { createApp, ref } = Vue;
+    
+    createApp({
+      setup() {
+        const numbers = ref([100, 500, 250]);
+        
+        const divideNumber = (index) => {
+          const newValue = numbers.value[index] / 2;
+          if (newValue < 1) {
+            numbers.value.splice(index, 1);
+          } else {
+            numbers.value[index] = newValue;
+          }
+        };
+        
+        const addNumber = () => {
+          if (numbers.value.length > 0) {
+            const lastNumber = numbers.value[numbers.value.length - 1];
+            numbers.value.push(lastNumber / 2);
+          } else {
+            numbers.value.push(Math.floor(Math.random() * 1000));
+          }
+        };
+        
+        return {
+          numbers,
+          divideNumber,
+          addNumber
+        };
+      }
+    }).mount('#app');
+  </script>
+</body>
+</html>
